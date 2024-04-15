@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Kiểm tra a có chia hết cho b hay không?</h1>
+<input type="number" id="a" placeholder="Nhâp giá trị a: ">;
+<input type="number" id="b" placeholder="Nhâp giá trị b: ">;
+<button onclick="kq()">Kết quả</button>
+<p id="kq"></p>
+</body>
+<script>
+    function kq() {
+        let a = +document.getElementById('a').value;
+        let b = +document.getElementById('b').value;
+        if (a % b == 0) {
+            document.getElementById('kq').innerHTML = 'a chia hết cho b'
+        } else {
+            document.getElementById('kq').innerHTML = 'a không chia hết cho b'
+        }
+    }
+</script>
+</html>
